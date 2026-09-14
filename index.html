@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayraklı Hayat Güzellik Merkezi | İzmir Cilt Bakımı & Estetik</title>
+    <meta name="description" content="Bayraklı'da profesyonel medikal cilt bakımı, lazer epilasyon, bölgesel incelme ve kalıcı makyaj uygulamaları ile Hayat Güzellik Merkezi'nde kendinizi yenileyin.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nude: {
+                            50: '#FAF6F4',
+                            100: '#F4E8EB',
+                            200: '#E8D5C4',
+                            300: '#DEC0A8',
+                        },
+                        gold: {
+                            300: '#F2D388',
+                            400: '#E0A96D',
+                            500: '#D4AF37',
+                            600: '#C59A27',
+                            glow: 'rgba(212, 175, 55, 0.4)'
+                        },
+                        plum: {
+                            900: '#1D171D',
+                            800: '#2B232A',
+                            700: '#3D313C',
+                            600: '#5A4A58'
+                        },
+                        surface: '#FAFAFA'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'neon-gold': '0 0 25px rgba(212, 175, 55, 0.35)',
+                        'soft': '0 10px 30px -5px rgba(43, 35, 42, 0.05)',
+                        'card': '0 15px 35px -5px rgba(43, 35, 42, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #E0A96D 50%, #B8860B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #D4AF37 0%, #E0A96D 100%);
+        }
+        .hero-halo {
+            box-shadow: 0 0 50px 10px rgba(212, 175, 55, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-surface text-plum-800 font-sans antialiased selection:bg-gold-400 selection:text-white pb-20 md:pb-0">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-plum-900 text-nude-100 text-xs py-2 px-4 border-b border-gold-500/20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-1">
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+                <span class="tracking-wide">İzmir Bayraklı'da Kişiye Özel VIP Güzellik ve Estetik Hizmetleri</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="tel:5357838487" class="hover:text-gold-400 transition-colors flex items-center gap-1.5 font-medium">
+                    <i class="fa-solid fa-phone text-gold-400 text-[10px]"></i> 535 783 84 87
+                </a>
+                <span class="text-plum-600 hidden sm:inline">|</span>
+                <span class="text-nude-200 hidden sm:inline"><i class="fa-regular fa-clock text-gold-400 mr-1"></i> Pzt - Cmt: 09:30 - 19:30</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-nude-200/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="group flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-full border border-gold-500/40 p-0.5 flex items-center justify-center bg-nude-100/50 group-hover:border-gold-500 transition-all shadow-sm">
+                        <img src="https://www.designarena.ai/u/1ee7d3ca-c00a-43ff-8fed-8b546e9dfc1c" alt="Hayat Güzellik Merkezi Logo" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <span class="block font-serif text-lg sm:text-xl font-bold tracking-tight text-plum-900 leading-tight">
+                            Bayraklı <span class="gold-gradient-text">Hayat</span>
+                        </span>
+                        <span class="block text-[10px] tracking-[0.25em] uppercase text-plum-600 font-semibold">Güzellik Merkezi</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="#hakkimizda" class="text-sm font-medium text-plum-700 hover:text-gold-500 transition-colors">Hakkımızda</a>
+                    <a href="#hizmetler" class="text-sm font-medium text-plum-700 hover:text-gold-500 transition-colors">Hizmetlerimiz</a>
+                    <a href="#instagram" class="text-sm font-medium text-plum-700 hover:text-gold-500 transition-colors">Instagram</a>
+                    <a href="#yorumlar" class="text-sm font-medium text-plum-700 hover:text-gold-500 transition-colors">Müşteri Yorumları</a>
+                    <a href="#iletisim" class="text-sm font-medium text-plum-700 hover:text-gold-500 transition-colors">İletişim</a>
+                </nav>
+
+                <!-- Desktop CTA Buttons -->
+                <div class="hidden md:flex items-center gap-3">
+                    <a href="https://www.instagram.com/bayraklihayatguzellik/" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-full text-plum-700 bg-nude-100 hover:bg-gold-400 hover:text-white transition-all duration-300" title="Instagram Profilimiz">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </a>
+                    <a href="https://wa.me/5357838487" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-white gold-gradient-bg hover:shadow-neon-gold hover:opacity-95 transition-all duration-300 shadow-sm">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>WhatsApp Randevu</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" type="button" class="lg:hidden p-2.5 rounded-lg text-plum-800 hover:bg-nude-100 transition-colors focus:outline-none" aria-label="Menüyü Aç">
+                    <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-nude-200/80 bg-white/98 px-4 pt-3 pb-6 space-y-3 shadow-xl">
+            <a href="#hakkimizda" class="block px-3 py-2 rounded-md text-base font-medium text-plum-800 hover:bg-nude-100 hover:text-gold-500 transition">Hakkımızda</a>
+            <a href="#hizmetler" class="block px-3 py-2 rounded-md text-base font-medium text-plum-800 hover:bg-nude-100 hover:text-gold-500 transition">Hizmetlerimiz</a>
+            <a href="#instagram" class="block px-3 py-2 rounded-md text-base font-medium text-plum-800 hover:bg-nude-100 hover:text-gold-500 transition">Instagram</a>
+            <a href="#yorumlar" class="block px-3 py-2 rounded-md text-base font-medium text-plum-800 hover:bg-nude-100 hover:text-gold-500 transition">Müşteri Yorumları</a>
+            <a href="#iletisim" class="block px-3 py-2 rounded-md text-base font-medium text-plum-800 hover:bg-nude-100 hover:text-gold-500 transition">İletişim & Lokasyon</a>
+            
+            <div class="pt-3 border-t border-nude-200 grid grid-cols-2 gap-2">
+                <a href="https://wa.me/5357838487" target="_blank" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg text-xs font-semibold bg-emerald-600 text-white">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://www.instagram.com/bayraklihayatguzellik/" target="_blank" class="flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg text-xs font-semibold bg-gradient-to-r from-purple-600 to-pink-500 text-white">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. HERO SECTION -->
+        <section class="relative overflow-hidden bg-gradient-to-b from-nude-50 via-white to-surface py-16 md:py-24 lg:py-28">
+            <!-- Decorative Subtle Ambient Glows -->
+            <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gold-300/15 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-10 right-0 w-[400px] h-[400px] bg-nude-200/40 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    
+                    <!-- Left Hero Text Content -->
+                    <div class="lg:col-span-7 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-nude-100 border border-gold-400/30 text-plum-800 text-xs font-semibold uppercase tracking-widest mb-6">
+                            <i class="fa-solid fa-sparkles text-gold-500"></i>
+                            <span>İzmir Bayraklı Estetik & Bakım</span>
+                        </div>
+
+                        <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-plum-900 leading-[1.15] mb-6">
+                            Bayraklı'da Cildinize ve Güzelliğinize <span class="italic font-normal gold-gradient-text">Uzman Dokunuş</span>
+                        </h1>
+
+                        <p class="text-base sm:text-lg text-plum-700/90 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8">
+                            Profesyonel cilt bakımı, epilasyon, bölgesel incelme ve kişiye özel estetik çözümlerimizle kendinizi yenileyin. Hijyenik ortamımız ve uzman kadromuzla yanınızdayız.
+                        </p>
+
+                        <!-- 3 Main Action Buttons -->
+                        <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3.5">
+                            <!-- Button 1: WhatsApp -->
+                            <a href="https://wa.me/5357838487" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-sm text-white gold-gradient-bg shadow-md hover:shadow-neon-gold hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span>Hızlı WhatsApp Randevu</span>
+                            </a>
+
+                            <!-- Button 2: Instagram -->
+                            <a href="https://www.instagram.com/bayraklihayatguzellik/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-sm text-plum-900 bg-white border border-nude-300 shadow-sm hover:border-gold-400 hover:bg-nude-50 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
+                                <i class="fa-brands fa-instagram text-lg text-pink-600"></i>
+                                <span>Instagram Profili</span>
+                            </a>
+
+                            <!-- Button 3: Google Maps -->
+                            <a href="https://www.google.com/maps/search/?api=1&query=Bayrakli+Hayat+Guzellik+Merkezi+Izmir" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-xl font-semibold text-sm text-plum-700 bg-nude-100/70 hover:bg-nude-200/80 hover:text-plum-900 transition-all duration-300">
+                                <i class="fa-solid fa-location-dot text-gold-500"></i>
+                                <span>Haritada Yol Tarifi</span>
+                            </a>
+                        </div>
+
+                        <!-- Trust Mini Badges -->
+                        <div class="mt-10 pt-8 border-t border-nude-200/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                            <div class="text-center lg:text-left">
+                                <div class="font-serif text-2xl font-bold text-plum-900">%100</div>
+                                <div class="text-xs text-plum-600 font-medium">Hijyen Standardı</div>
+                            </div>
+                            <div class="text-center lg:text-left border-x border-nude-200 px-2">
+                                <div class="font-serif text-2xl font-bold text-plum-900">5.0 ★</div>
+                                <div class="text-xs text-plum-600 font-medium">Danışan Memnuniyeti</div>
+                            </div>
+                            <div class="text-center lg:text-left">
+                                <div class="font-serif text-2xl font-bold text-plum-900">Kişiye Özel</div>
+                                <div class="text-xs text-plum-600 font-medium">Bakım Protokolü</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Hero Visual: Salon Aesthetics + Official Illuminated Sign Emblem -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="relative w-full max-w-md">
+                            <!-- Background Aura -->
+                            <div class="absolute inset-0 bg-gold-400/20 rounded-3xl filter blur-2xl transform rotate-3 scale-95"></div>
+                            
+                            <!-- Main Visual Card (Hero Section Image Allowed) -->
+                            <div class="relative bg-white p-3 sm:p-4 rounded-3xl shadow-card border border-nude-200">
+                                <div class="relative h-[380px] sm:h-[440px] rounded-2xl overflow-hidden group">
+                                    <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?q=80&w=1000&auto=format&fit=crop" 
+                                         alt="Bayraklı Hayat Güzellik Merkezi Salon Atmosferi" 
+                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                                    
+                                    <div class="absolute inset-0 bg-gradient-to-t from-plum-900/80 via-plum-900/20 to-transparent"></div>
+                                    
+                                    <!-- Floating Sign Badge (Authentic Emblem from user's salon) -->
+                                    <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-md p-2 rounded-2xl border border-gold-400/50 shadow-neon-gold flex items-center gap-3">
+                                        <div class="w-12 h-12 rounded-full overflow-hidden border border-gold-500/50">
+                                            <img src="https://www.designarena.ai/u/1ee7d3ca-c00a-43ff-8fed-8b546e9dfc1c" alt="Hayat Güzellik Tabela" class="w-full h-full object-cover">
+                                        </div>
+                                        <div class="pr-2">
+                                            <div class="text-[11px] font-bold text-plum-900">Hayat Güzellik</div>
+                                            <div class="text-[9px] text-gold-600 font-semibold tracking-wider uppercase">Bayraklı / İzmir</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bottom Overlay Note -->
+                                    <div class="absolute bottom-4 left-4 right-4 text-white p-4 rounded-xl bg-plum-900/60 backdrop-blur-sm border border-white/10">
+                                        <div class="flex items-center gap-2 text-gold-300 text-xs font-semibold mb-1">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                            <span>Son Teknoloji Cihazlar</span>
+                                        </div>
+                                        <p class="text-xs text-nude-100 font-light">Konforlu ve steril kabinlerimizde kendinize vakit ayırın.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. HAKKIMIZDA & İÇERİK BÖLÜMÜ -->
+        <section id="hakkimizda" class="py-20 bg-white border-y border-nude-200/60">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+                    <!-- About Text -->
+                    <div class="lg:col-span-7">
+                        <div class="inline-block text-xs font-bold text-gold-500 uppercase tracking-widest mb-3">Kurumsal Değerlerimiz</div>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-plum-900 leading-tight mb-6">
+                            Güzelliğinizi Güven ve Yüksek Hijyenle Buluşturuyoruz
+                        </h2>
+                        <div class="space-y-4 text-plum-700 leading-relaxed text-sm sm:text-base">
+                            <p>
+                                <strong>Bayraklı Hayat Güzellik Merkezi</strong>, İzmir Bayraklı'da modern, steril ve huzur verici bir atmosferde profesyonel estetik ve bakım hizmetleri sunmaktadır. 
+                            </p>
+                            <p>
+                                Amacımız; her danışanımızın cilt yapısını ve estetik ihtiyaçlarını doğru analiz ederek, en yeni teknolojiler ve güvenilir dermokozmetik protokollerle doğal güzelliği ön plana çıkarmaktır. Müşteri memnuniyetini ve hijyeni daima en üst sırada tutuyoruz.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Single Content Image (Allowed per rules) -->
+                    <div class="lg:col-span-5">
+                        <div class="relative rounded-2xl overflow-hidden shadow-soft border border-nude-200 group">
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=900&auto=format&fit=crop" 
+                                 alt="Bayraklı Hayat Güzellik Cilt Analizi ve Bakım" 
+                                 class="w-full h-72 sm:h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-plum-900/20"></div>
+                            <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg text-xs font-semibold text-plum-900 flex items-center gap-2 shadow-sm">
+                                <i class="fa-solid fa-gem text-gold-500"></i>
+                                <span>Kişiye Özel Cilt Analizi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 Feature Cards (Icon-based, No Images as per prompt) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Feature 1 -->
+                    <div class="p-6 rounded-2xl bg-surface border border-nude-200/80 hover:border-gold-400 hover:shadow-card transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-nude-100 flex items-center justify-center text-gold-500 text-xl mb-4 group-hover:bg-gold-500 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <h3 class="font-serif text-lg font-bold text-plum-900 mb-2">Uzman Kadro</h3>
+                        <p class="text-xs text-plum-600 leading-relaxed">
+                            Alanında sertifikalı, deneyimli ve sürekli eğitimlerle güncellenen profesyonel estetisyenler.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="p-6 rounded-2xl bg-surface border border-nude-200/80 hover:border-gold-400 hover:shadow-card transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-nude-100 flex items-center justify-center text-gold-500 text-xl mb-4 group-hover:bg-gold-500 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-pump-medical"></i>
+                        </div>
+                        <h3 class="font-serif text-lg font-bold text-plum-900 mb-2">%100 Steril & Hijyen</h3>
+                        <p class="text-xs text-plum-600 leading-relaxed">
+                            Tek kullanımlık sarf malzemeler, sterilize edilmiş cihaz başlıkları ve tertemiz salon ortamı.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="p-6 rounded-2xl bg-surface border border-nude-200/80 hover:border-gold-400 hover:shadow-card transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-nude-100 flex items-center justify-center text-gold-500 text-xl mb-4 group-hover:bg-gold-500 group-hover:text-white transition-colors">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <h3 class="font-serif text-lg font-bold text-plum-900 mb-2">Memnuniyet Odaklı</h3>
+                        <p class="text-xs text-plum-600 leading-relaxed">
+                            Danışanlarımızın isteklerini dinleyen, samimi ve dürüst bilgilendirme ile çalışan hizmet anlayışı.
+                        </p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="p-6 rounded-2xl bg-surface border border-nude-200/80 hover:border-gold-400 hover:shadow-card transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-nude-100 flex items-center justify-center text-gold-500 text-xl mb-4 group-hover:bg-gold-500 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="font-serif text-lg font-bold text-plum-900 mb-2">Özel Protokoller</h3>
+                        <p class="text-xs text-plum-600 leading-relaxed">
+                            Ezber çözümler yerine cildinizin ve vücudunuzun biyolojik yapısına en uygun özel seans programları.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. HİZMETLERİMİZ BÖLÜMÜ (Görselsiz, Sade Kart Tasarımları) -->
+        <section id="hizmetler" class="py-20 bg-surface">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-bold text-gold-500 uppercase tracking-widest block mb-2">Uzmanlık Alanlarımız</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-plum-900 mb-4">
+                        Ayrıcalıklı Güzellik & Bakım Hizmetleri
+                    </h2>
+                    <p class="text-sm sm:text-base text-plum-600">
+                        Modern teknoloji ve kanıtlanmış yöntemlerle güzelliğinizi tazeleyen ana uygulamalarımız.
+                    </p>
+                </div>
+
+                <!-- 3 Service Cards (Strictly No Images, Typographic & Icons) -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Kart 1 -->
+                    <div class="bg-white rounded-3xl p-8 border border-nude-200 shadow-soft hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-nude-100 text-gold-500 flex items-center justify-center text-2xl mb-6">
+                                <i class="fa-solid fa-spa"></i>
+                            </div>
+                            <span class="text-[11px] uppercase tracking-wider font-semibold text-gold-600 block mb-1">Medikal Bakım</span>
+                            <h3 class="font-serif text-xl font-bold text-plum-900 mb-3">
+                                Profesyonel & Medikal Cilt Bakımı
+                            </h3>
+                            <p class="text-sm text-plum-600 leading-relaxed mb-6">
+                                Derinlemesine gözenek temizliği, hydrafacial, leke ve akne bakımları, yoğun nem terapisi ve anti-aging yenileme protokolleri.
+                            </p>
+                            <ul class="space-y-2.5 text-xs text-plum-700 font-medium mb-8">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500 text-xs"></i> Derinlemesine Hydrafacial Temizlik</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500 text-xs"></i> Leke & Ton Eşitleyici Bakımlar</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500 text-xs"></i> Kolajen & Anti-Aging Lifting</li>
+                            </ul>
+                        </div>
+
+                        <a href="https://wa.me/5357838487" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-xs font-semibold text-plum-900 bg-nude-100 hover:bg-gold-500 hover:text-white transition-colors duration-300">
+                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                            <span>WhatsApp ile Detaylı Bilgi Al</span>
+                        </a>
+                    </div>
+
+                    <!-- Kart 2 -->
+                    <div class="bg-white rounded-3xl p-8 border-2 border-gold-400/50 shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute -right-8 -top-8 w-24 h-24 bg-gold-300/20 rounded-full blur-xl pointer-events-none"></div>
+                        <div class="absolute top-4 right-4 bg-gold-500 text-white text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-full">
+                            Popüler
+                        </div>
+                        
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gold-500 text-white flex items-center justify-center text-2xl mb-6 shadow-sm">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <span class="text-[11px] uppercase tracking-wider font-semibold text-gold-600 block mb-1">Vücut & Pürüzsüzlük</span>
+                            <h3 class="font-serif text-xl font-bold text-plum-900 mb-3">
+                                Epilasyon & Vücut Bakımı
+                            </h3>
+                            <p class="text-sm text-plum-600 leading-relaxed mb-6">
+                                Son teknoloji cihazlarla konforlu ve yüksek etkili epilasyon, bölgesel sıkılaşma, selülit ve toparlama çözümleri.
+                            </p>
+                            <ul class="space-y-2.5 text-xs text-plum-700 font-medium mb-8">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500 text-xs"></i> 4 Mevsim Güvenli Epilasyon</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500 text-xs"></i> Bölgesel İncelme & G5 Masajı</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500 text-xs"></i> Vücut Sıkılaştırma Protokolleri</li>
+                            </ul>
+                        </div>
+
+                        <a href="https://wa.me/5357838487" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-xs font-semibold text-white gold-gradient-bg hover:opacity-95 shadow-sm transition-opacity">
+                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                            <span>WhatsApp ile Detaylı Bilgi Al</span>
+                        </a>
+                    </div>
+
+                    <!-- Kart 3 -->
+                    <div class="bg-white rounded-3xl p-8 border border-nude-200 shadow-soft hover:shadow-card hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-nude-100 text-gold-500 flex items-center justify-center text-2xl mb-6">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <span class="text-[11px] uppercase tracking-wider font-semibold text-gold-600 block mb-1">Kalıcı Güzellik</span>
+                            <h3 class="font-serif text-xl font-bold text-plum-900 mb-3">
+                                Kalıcı Makyaj & Estetik Touch
+                            </h3>
+                            <p class="text-sm text-plum-600 leading-relaxed mb-6">
+                                Doğal ifadenizi belirginleştiren ipek kirpik, kaş laminasyonu, dudak renklendirme ve kalıcı eyeliner uygulamaları.
+                            </p>
+                            <ul class="space-y-2.5 text-xs text-plum-700 font-medium mb-8">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500 text-xs"></i> İpek Kirpik & Kirpik Lifting</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500 text-xs"></i> Dudak Renklendirme & Eyeliner</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gold-500 text-xs"></i> Microblading & Kaş Laminasyonu</li>
+                            </ul>
+                        </div>
+
+                        <a href="https://wa.me/5357838487" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-xs font-semibold text-plum-900 bg-nude-100 hover:bg-gold-500 hover:text-white transition-colors duration-300">
+                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                            <span>WhatsApp ile Detaylı Bilgi Al</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. INSTAGRAM AKIŞI & SOSYAL MEDYA (Sade Yönlendirme, Görsel İçermeyen Lüks Tasarım) -->
+        <section id="instagram" class="py-16 bg-gradient-to-r from-plum-900 via-plum-800 to-plum-900 text-white relative overflow-hidden">
+            <div class="absolute inset-0 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
+            
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10">
+                <div class="w-16 h-16 rounded-full bg-white/10 border border-gold-400/40 flex items-center justify-center mx-auto mb-6 text-gold-400 text-3xl shadow-neon-gold">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+                <span class="text-xs font-semibold tracking-widest uppercase text-gold-400 block mb-2">@bayraklihayatguzellik</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">
+                    Uygulamalarımızı Instagram'da Keşfedin
+                </h2>
+                
+                <p class="text-nude-100 text-sm sm:text-base font-light max-w-xl mx-auto mb-8 leading-relaxed">
+                    <strong>@bayraklihayatguzellik</strong> hesabımızı takip ederek en güncel salon ortamımızı, işlem detaylarını ve gerçek danışan değişimlerini inceleyebilirsiniz.
+                </p>
+
+                <a href="https://www.instagram.com/bayraklihayatguzellik/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-sm text-plum-900 bg-white hover:bg-gold-400 hover:text-white transition-all duration-300 shadow-lg hover:shadow-neon-gold transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-instagram text-lg text-pink-600 group-hover:text-white"></i>
+                    <span>Instagram'da Bizi Takip Edin</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-70"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- 6. MÜŞTERİ YORUMLARI (Google Maps 5 Yıldız Rozeti ve Sade Metin Kartları) -->
+        <section id="yorumlar" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Header with Google Rating Badge -->
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+                    <div>
+                        <span class="text-xs font-bold text-gold-500 uppercase tracking-widest block mb-2">Gerçek Danışan Deneyimleri</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-plum-900">
+                            Müşteri Yorumları & Değerlendirmeler
+                        </h2>
+                    </div>
+
+                    <!-- Google Maps Review Badge -->
+                    <div class="inline-flex items-center gap-3 bg-surface border border-nude-200 px-5 py-3 rounded-2xl shadow-sm self-start md:self-auto">
+                        <div class="w-9 h-9 rounded-full bg-white border border-nude-200 flex items-center justify-center text-lg shadow-xs">
+                            <i class="fa-brands fa-google text-blue-500"></i>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-1 text-gold-500 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="ml-1 text-xs font-bold text-plum-900">5.0 / 5.0</span>
+                            </div>
+                            <div class="text-[11px] text-plum-600 font-medium">Google Haritalar Değerlendirmesi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3-4 Simple Feedback Text Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Review 1 -->
+                    <div class="bg-surface rounded-2xl p-6 border border-nude-200/80 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-1 text-gold-500 text-xs mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-sm text-plum-700 leading-relaxed italic mb-6">
+                                "Bayraklı'da uzun süredir aradığım hijyenik ve ilgili salonu buldum. Medikal cilt bakımından sonra cildim ışıl ışıl oldu. Estetisyenlerin yaklaşımı ve titizliği tek kelimeyle harika."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-nude-200">
+                            <div class="w-9 h-9 rounded-full bg-nude-200 flex items-center justify-center text-xs font-bold text-plum-900">
+                                EK
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold text-plum-900">Elif K.</div>
+                                <div class="text-[10px] text-plum-500">Cilt Bakımı Danışanı</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="bg-surface rounded-2xl p-6 border border-nude-200/80 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-1 text-gold-500 text-xs mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-sm text-plum-700 leading-relaxed italic mb-6">
+                                "Epilasyon seanslarım için gidiyorum. Cihazlar çok yeni ve acısız. Salon pırıl pırıl, kahve ikramından randevu saatine kadar her şey çok düzenli ve profesyonel."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-nude-200">
+                            <div class="w-9 h-9 rounded-full bg-nude-200 flex items-center justify-center text-xs font-bold text-plum-900">
+                                SA
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold text-plum-900">Selin A.</div>
+                                <div class="text-[10px] text-plum-500">Epilasyon Danışanı</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="bg-surface rounded-2xl p-6 border border-nude-200/80 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-1 text-gold-500 text-xs mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-sm text-plum-700 leading-relaxed italic mb-6">
+                                "İpek kirpik ve kaş laminasyonu yaptırdım, tam istediğim gibi aşırı doğal ve zarif durdu. Güler yüzlü karşılamaları ve temizlik standartları için teşekkür ederim."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-nude-200">
+                            <div class="w-9 h-9 rounded-full bg-nude-200 flex items-center justify-center text-xs font-bold text-plum-900">
+                                MÖ
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold text-plum-900">Merve Ö.</div>
+                                <div class="text-[10px] text-plum-500">Kalıcı Makyaj Danışanı</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 7. FOOTER & İLETİŞİM / LOKASYON BÖLÜMÜ -->
+        <footer id="iletisim" class="bg-plum-900 text-nude-100 pt-16 pb-12 border-t border-gold-500/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-plum-700">
+                    
+                    <!-- Col 1: Brand Info -->
+                    <div class="lg:col-span-5 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full border border-gold-400 p-0.5 bg-nude-100/10 flex items-center justify-center">
+                                <img src="https://www.designarena.ai/u/1ee7d3ca-c00a-43ff-8fed-8b546e9dfc1c" alt="Logo" class="w-full h-full object-cover rounded-full">
+                            </div>
+                            <span class="font-serif text-xl font-bold tracking-tight text-white">
+                                Bayraklı Hayat Güzellik Merkezi
+                            </span>
+                        </div>
+                        <p class="text-xs text-nude-200 leading-relaxed max-w-sm">
+                            İzmir Bayraklı'da profesyonel estetik, medikal cilt bakımı, epilasyon ve kalıcı makyaj çözümleriyle kendinizi özel hissedin.
+                        </p>
+                        <div class="flex items-center gap-3 pt-2">
+                            <a href="https://www.instagram.com/bayraklihayatguzellik/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-plum-800 flex items-center justify-center text-gold-400 hover:bg-gold-500 hover:text-plum-900 transition-colors">
+                                <i class="fa-brands fa-instagram text-base"></i>
+                            </a>
+                            <a href="https://wa.me/5357838487" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-plum-800 flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-white transition-colors">
+                                <i class="fa-brands fa-whatsapp text-base"></i>
+                            </a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Bayrakli+Hayat+Guzellik+Merkezi+Izmir" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-plum-800 flex items-center justify-center text-gold-400 hover:bg-gold-500 hover:text-plum-900 transition-colors">
+                                <i class="fa-solid fa-location-dot text-base"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Col 2: Hizmetler Quick Links -->
+                    <div class="lg:col-span-3 space-y-3">
+                        <div class="text-sm font-semibold text-white tracking-wider uppercase border-b border-gold-500/30 pb-2">Hızlı Hizmetler</div>
+                        <ul class="space-y-2 text-xs text-nude-200">
+                            <li><a href="#hizmetler" class="hover:text-gold-400 transition-colors">Medikal Cilt Bakımı & Hydrafacial</a></li>
+                            <li><a href="#hizmetler" class="hover:text-gold-400 transition-colors">Lazer Epilasyon Seansları</a></li>
+                            <li><a href="#hizmetler" class="hover:text-gold-400 transition-colors">Bölgesel İncelme & G5 Masajı</a></li>
+                            <li><a href="#hizmetler" class="hover:text-gold-400 transition-colors">İpek Kirpik & Kaş Laminasyonu</a></li>
+                            <li><a href="#hizmetler" class="hover:text-gold-400 transition-colors">Dudak Renklendirme & Kalıcı Makyaj</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Col 3: İletişim Bilgileri -->
+                    <div class="lg:col-span-4 space-y-3">
+                        <div class="text-sm font-semibold text-white tracking-wider uppercase border-b border-gold-500/30 pb-2">İletişim & Konum</div>
+                        <ul class="space-y-3 text-xs text-nude-200">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot text-gold-400 text-sm mt-0.5"></i>
+                                <span>Bayraklı / İzmir</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-phone text-gold-400 text-sm"></i>
+                                <a href="tel:5357838487" class="hover:text-gold-400 font-semibold text-white transition-colors">535 783 84 87</a>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
+                                <a href="https://wa.me/5357838487" target="_blank" class="hover:text-emerald-400 font-semibold text-white transition-colors">WhatsApp: 535 783 84 87</a>
+                            </li>
+                            <li class="pt-2">
+                                <a href="https://www.google.com/maps/search/?api=1&query=Bayrakli+Hayat+Guzellik+Merkezi+Izmir" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-plum-800 text-xs text-gold-300 hover:bg-gold-500 hover:text-plum-900 font-medium transition-colors">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <span>Google Haritalarda Aç</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-nude-300 gap-4">
+                    <div>
+                        © <span id="year"></span> Bayraklı Hayat Güzellik Merkezi. Tüm hakları saklıdır.
+                    </div>
+                    <div class="text-[11px] text-nude-400">
+                        Bayraklı / İzmir Profesyonel Güzellik & Bakım
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </main>
+
+    <!-- 8. SABİT MOBİL ALT BAR (FLOATING ACTION BAR - Only on Mobile) -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-plum-900/95 backdrop-blur-lg border-t border-gold-500/30 px-3 py-2 shadow-2xl">
+        <div class="grid grid-cols-3 gap-2">
+            
+            <!-- Mobile 1: WhatsApp -->
+            <a href="https://wa.me/5357838487" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-emerald-600 active:scale-95 text-white transition-all">
+                <i class="fa-brands fa-whatsapp text-base leading-none mb-1"></i>
+                <span class="text-[10px] font-bold tracking-tight">WhatsApp</span>
+            </a>
+
+            <!-- Mobile 2: Instagram -->
+            <a href="https://www.instagram.com/bayraklihayatguzellik/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 active:scale-95 text-white transition-all">
+                <i class="fa-brands fa-instagram text-base leading-none mb-1"></i>
+                <span class="text-[10px] font-bold tracking-tight">Instagram</span>
+            </a>
+
+            <!-- Mobile 3: Harita -->
+            <a href="https://www.google.com/maps/search/?api=1&query=Bayrakli+Hayat+Guzellik+Merkezi+Izmir" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-plum-800 border border-gold-400/40 active:scale-95 text-gold-300 transition-all">
+                <i class="fa-solid fa-location-dot text-base leading-none mb-1"></i>
+                <span class="text-[10px] font-bold tracking-tight">Haritada Aç</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT FOR DYNAMIC BEHAVIORS -->
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle logic
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Close mobile dropdown when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+    </script>
+</body>
+</html>
